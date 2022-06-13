@@ -28,7 +28,7 @@ FROM retirement_titles as rt
 ORDER BY rt.emp_no, rt.to_date DESC;
 
 
--- Retrieve the employee number, first and last name, and title columns from the Retirement Titles table.
+-- Retrieve the number of employees by their most recent job title who are about to retire.
 SELECT COUNT(ut.title), ut.title
 INTO retiring_titles
 FROM unique_titles as ut
